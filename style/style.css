@@ -1,0 +1,126 @@
+/* Page center */
+body {
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator title */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #6c9fc9;
+    font-weight: bold;
+}
+
+/* Calculator box */
+.calculator {
+    width: 320px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Display screen */
+.display {
+    background-color: #000;
+    color: #00ff90;
+    height: 70px;
+    font-size: 26px;
+    text-align: right;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow-x: auto;
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* General button style */
+button {
+    height: 55px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* AC button */
+.ac {
+    grid-column: span 4;
+    border-radius: 30px;
+}
+
+/* Equal button */
+.equal {
+    grid-column: span 3;
+    border-radius: 30px;
+}
+
+/* Operator buttons color override */
+.btn-warning {
+    background-color: #ff9500;
+    color: white;
+}
+
+/* Equal button color */
+.btn-success {
+    background-color: #34c759;
+}
+
+/* Square button */
+.btn-info {
+    background-color: #5ac8fa;
+}
+
+/* Secondary (%) */
+.btn-secondary {
+    background-color: #8e8e93;
+}
+
+
+/* Mode toggle button */
+.mode-toggle {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 6px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+/* Light mode styles */
+body.light {
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+}
+
+body.light .calculator {
+    background-color: #f9f9f9;
+}
+
+body.light .display {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light h1 {
+    color: #000;
+}
