@@ -66,6 +66,8 @@ OR use Live Server in VS Code.
 ![alt text](image-1.png)
 
 
+**Live Demo:** [https://fluxcalc.netlify.app]
+
 
 🎯 Learning Outcomes
 
